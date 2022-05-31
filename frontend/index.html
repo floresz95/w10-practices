@@ -5,21 +5,30 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>This is FRONTEND</title>
+	<link rel="stylesheet" href="style.css">
 	<script src="script.js" defer></script>
+	<script src="save-docs.js" defer></script>
 </head>
 <body>
 	<!-- <div id="root"></div> -->
 
-	<form id="google-search-form" action="https://www.google.com/search" method="get">
+	<form class="hidden" id="google-search-form" action="https://www.google.com/search" method="get">
 		<a href="https://www.google.com/search?q=javascript">Keresés</a>
 		<input name="q" type="text">
 		<button id="btn-google-search">Send</button>
 	</form>
 
-	<form action="" method="post">
+	<form id="hidden" action="" method="post">
 		<input name="username" type="text">
 		<input name="password" type="password">
 		<button>Send</button>
 	</form>
+
+	<div class="docs">
+		<label for="doc-text">A doksi szövege</label>
+		<textarea name="doc-text" id="" cols="30" rows="10"></textarea>
+		<p class="hidden" id="save-in-progress-text">Mentés...</p>
+	</div>
+
 </body>
 </html>
